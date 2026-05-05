@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# NodeRAG directories
+cache/
+info/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Configuration (containing secrets)
+Node_config.yaml
+
+# Data
+input/
+wikidata_triples.csv
+wikidata_global_companies_info.csv
+
+# Output
+*.png
+benchmark_20_results.json
+comparison_results.json
+error.log
