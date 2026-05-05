@@ -1,0 +1,46 @@
+#==============================================================================
+# AI Model Configuration
+#==============================================================================
+model_config:
+  service_provider: "openai"
+  model_name: "gpt-4o-mini"
+  api_keys: null # Will load from OPENAI_API_KEY env variable
+  temperature: 0
+  max_tokens: 10000
+  rate_limit: 40
+
+embedding_config:
+  service_provider: "openai_embedding"
+  embedding_model_name: "text-embedding-3-small"
+  api_keys: null # Will load from OPENAI_API_KEY env variable
+  rate_limit: 20
+
+
+#==============================================================================
+# Document Processing Configuration
+#==============================================================================
+config:
+  main_folder: "."
+  language: "English"
+  docu_type: "mixed"
+  chunk_size: 1048
+  embedding_batch_size: 50
+  use_tqdm: true
+  use_rich: false
+  space: "l2"
+  dim: 1536
+  m: 50
+  ef: 200
+  Hcluster_size: 39
+  url: "127.0.0.1"
+  port: 5010
+  unbalance_adjust: true
+  cross_node: 10
+  Enode: 10
+  Rnode: 30
+  Hnode: 10
+  HNSW_results: 10
+  similarity_weight: 1
+  accuracy_weight: 1
+  ppr_alpha: 0.5
+  ppr_max_iter: 2
